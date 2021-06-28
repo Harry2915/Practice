@@ -5,12 +5,27 @@ import java.util.Scanner;
 
 public class Practice {
 	public static void main(String[] args) {
-	   for(int i=0;i<5;i++) {
-		   for(int k=0;k<4-i;k++)
-			   System.out.print(" ");
-		   for(int j=0;j<=i;j++)
-			   System.out.print(" * ");
-		   System.out.println();
-	   }
+	 
+	   Scanner sc = new Scanner(System.in);
+	   System.out.println("Enter the string");
+	   String s = sc.nextLine();
+	   System.out.println("Enter finding word");
+	   String find = sc.nextLine();
+	 
+	   System.out.println(count1(s,find));
 	 }
+	public static int count1(String s, String find) {
+		String arr[] = s.split(" ");
+		int count = 0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i].equalsIgnoreCase(find))
+				count++;
+		}
+		
+		
+		
+		return count;
+	}
+	
+	
 }
