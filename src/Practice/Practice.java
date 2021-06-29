@@ -9,36 +9,25 @@ import java.util.Scanner;
 public class Practice {
 	public static void main(String[] args) {
 	 
-		String s1= "my name is Harish Hibare";
-		HashMap <Character,Integer> map = new HashMap();
-		String s=s1.toLowerCase();
-		for(int i=0;i<s.length()-1;i++) {
-			int count = 0;
-			char temp=s.charAt(i);
+	String s = "0";
+	int count=0;
+	int tempcount=0;
+	for(int i=0;i<s.length()-1;i++) {
+		if(s.charAt(i)=='1')
+		{
+			tempcount++;
 			
-			if(s.charAt(i)!='0' && s.charAt(i)!=' ') {
-			for(int j=0;j<s.length()-1;j++) {
-				if(s.charAt(j)==temp) {
-					count++;
-					s.replace(s.charAt(j), '0');
-				}
-			}
-			}
-			map.put(temp, count);
 		}
-		System.out.println(map);
-		int max=0;
-		for (Entry<Character, Integer> entry : map.entrySet()) {
-			if(entry.getValue()>max)
-				max=entry.getValue();
+		else {
+			if(tempcount>count) {
+				count=tempcount;
+				tempcount=0;
+			}else 
+				tempcount=0;
+			
 		}
-		
-		for(Map.Entry<Character,Integer> entry : map.entrySet()) {
-			if(entry.getValue()==max)
-				System.out.println(entry.getKey()+" : "+entry.getValue());
-		}
-		
-		
+	}
+		System.out.println(count);
 	
 	}
 	
