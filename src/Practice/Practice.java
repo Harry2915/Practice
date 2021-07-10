@@ -11,35 +11,24 @@ import java.util.Map.Entry;
 import java.util.PriorityQueue;
 import java.util.Scanner;
 import java.util.TreeSet;
-
+class A{
+	int a,b,c;
+	
+	A(int a, int b){
+		this.a=a;
+		this.b=b;
+	System.out.println(a+b);
+	}
+	
+	A(int a, int b,int c){
+		this.a=a;
+		this.b=b;
+		this.c=c;
+		System.out.println(a+b+c);
+	}
+}
 public class Practice {
 	public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    int arr[] = new int[n];
-    for(int i =0;i<n;i++) {
-    	arr[i]=sc.nextInt();
-    	
-    }
- selection_sort(arr, n);
- for (int i : arr) {
-	System.out.print(i+" ");
-}
-    }
-	public static int[] selection_sort(int arr[], int n) {
-		for(int i=0;i<n-1;i++) {
-		int min = i;
-		for(int j=i+1;j<n;j++)
-			if(arr[j]<arr[min])
-				min=j;
-		
-		
-			int temp =arr[min];
-			arr[min]=arr[i];
-			arr[i]=temp;
-			
-		
-		}
-		return arr;
+   A a= new A(1,2);
 	}
 }
