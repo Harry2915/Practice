@@ -29,6 +29,6 @@ class A{
 }
 public class Practice {
 	public static void main(String[] args) {
-   A a= new A(1,2);
+   A a= new A(1,2,3);
 	}
 }
