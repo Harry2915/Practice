@@ -14,7 +14,7 @@ public static void main(String[] args) {
 	 
 	ApplicationContext factory = new ClassPathXmlApplicationContext("applicationContext.xml");
 	    //IoC container
-	    Employee employee = (Employee) factory.getBean("e");
+	    Employee employee = (Employee) factory.getBean("employee");
 	   System.out.println( employee.toString());
 }
 }
