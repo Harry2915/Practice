@@ -1,19 +1,24 @@
 package Practice;
 
-
+class A implements Runnable{
+	public void run() {
+		for(int i=0;i<11;i++)
+		System.out.println("in A class " + i);
+	}
+}
+class B implements Runnable{
+	public void run() {
+		for(int i=0;i<11;i++)
+		System.out.println("in B class " + i);
+	}
+}
 
 public class Practice {
 	public static void main(String[] args) {
-try {
-	int x=3;
-	int y=x/0;
-	System.out.println(y);
-} catch (Exception e) {
-	// TODO: handle exception
-	System.out.println("in catch");
-}finally {
-
-	System.out.println("in finally" );
-}
+		Thread t1 = new Thread(new A());
+		Thread t2 = new Thread(new B());
+		
+		t1.start();
+		t2.start();
 	}
 }
