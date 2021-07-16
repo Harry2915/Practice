@@ -1,12 +1,12 @@
 package Practice;
 
-class A implements Runnable{
+class A extends Thread{
 	public void run() {
 		for(int i=0;i<11;i++)
 		System.out.println("in A class " + i);
 	}
 }
-class B implements Runnable{
+class B extends Thread{
 	public void run() {
 		for(int i=0;i<11;i++)
 		System.out.println("in B class " + i);
