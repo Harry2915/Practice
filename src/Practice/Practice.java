@@ -4,12 +4,16 @@ package Practice;
 
 public class Practice {
 	public static void main(String[] args) {
-     for(int i=0;i<5;i++) {
-    	 for(int j=0;j<=i;j++)
-    		 System.out.print(" * ");
-    	 
-    	 
-    	 System.out.println();
-     }
+try {
+	int x=3;
+	int y=x/0;
+	System.out.println(y);
+} catch (Exception e) {
+	// TODO: handle exception
+	System.out.println("in catch");
+}finally {
+
+	System.out.println("in finally" );
+}
 	}
 }
