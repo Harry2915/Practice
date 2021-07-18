@@ -11,17 +11,19 @@ public class Practice {
 	public static void main(String[] args)  {
 		 Scanner sc = new Scanner(System.in);
 		 String s = sc.nextLine();
-		 
-		 System.out.println(ispalin(s));
+		 String s1 = sc.next();		 
+		 System.out.println(count(s,s1));
 
 		
 		}
-	public static String ispalin(String s) {
-		String temp="";
-		for(int i=s.length()-1;i>=0;i--)
-			temp+=s.charAt(i);
-		if(temp.equalsIgnoreCase(s))
-			return "is palin";
-		return "Not palin";
+	public static int count(String s, String s1) {
+		String arr[]=s.split(" ");
+		int count=0;
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i].equalsIgnoreCase(s1))
+				count++;
+		}
+		
+		return count;
 	}
 }
