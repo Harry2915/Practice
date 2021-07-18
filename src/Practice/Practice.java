@@ -10,24 +10,14 @@ import java.time.LocalTime;
 
 public class Practice {
 	public static void main(String[] args)  {
-		 Scanner sc = new Scanner(System.in);
-		 String s = sc.nextLine();
-		 String s1 = sc.nextLine();		 
-		 System.out.println(is_ana(s,s1));
-
-		
-		}
-	public static String is_ana(String s, String s1) {
-		
-		String arr[]=s.toLowerCase().split("");
-		String arr1[]=s1.toLowerCase().split("");
-		Arrays.sort(arr);
-		
-		Arrays.sort(arr1);
-	if(Arrays.equals(arr, arr1))
-		return "is ana";
-	else
-	return "not ana";
-		
+ for(int i=1;i<=5;i++) {
+	 for(int k=1;k<i;k++)
+		 System.out.print("_");
+	 for(int j=5-i;j>=0;j--)
+		 System.out.print(" * ");
+	 for(int h=1;h<i;h++)
+		 System.out.print("_");
+	 System.out.println();
+ }
 	}
 }
