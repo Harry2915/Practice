@@ -4,6 +4,7 @@ public class Employee {
 String firstName;
 String lastName;
 int age;
+Address address;
 public String getFirstName() {
 	return firstName;
 }
@@ -22,18 +23,26 @@ public int getAge() {
 public void setAge(int age) {
 	this.age = age;
 }
-public Employee(String firstName, String lastName, int age) {
+public Address getAddress() {
+	return address;
+}
+public void setAddress(Address address) {
+	this.address = address;
+}
+public Employee(String firstName, String lastName, int age, Address address) {
 	super();
 	this.firstName = firstName;
 	this.lastName = lastName;
 	this.age = age;
+	this.address = address;
 }
 public Employee() {
 	super();
 }
 @Override
 public String toString() {
-	return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + "]";
+	return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", age=" + age + ", address=" + address
+			+ "]";
 }
 
 }
