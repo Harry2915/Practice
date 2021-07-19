@@ -18,6 +18,7 @@ public class Practice {
 	 for(int h=1;h<i;h++)
 		 System.out.print("_");
 	 System.out.println();
+	 
  }
 	}
 }
