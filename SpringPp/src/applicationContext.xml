@@ -13,7 +13,7 @@
     
     </bean>
                
-<bean id="employee" class="com.model.Employee" autowire="byName">
+<bean id="employee" class="com.model.Employee" autowire="byType">
 <property name="firstName" value="Harish"></property>
 <property name="lastName" value="Hibare"></property>
 <property name="age" value="22" ></property>
