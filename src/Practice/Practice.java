@@ -10,15 +10,19 @@ import java.time.LocalTime;
 
 public class Practice {
 	public static void main(String[] args)  {
- for(int i=1;i<=5;i++) {
-	 for(int k=1;k<i;k++)
-		 System.out.print("_");
-	 for(int j=5-i;j>=0;j--)
-		 System.out.print(" * ");
-	 for(int h=1;h<i;h++)
-		 System.out.print("_");
-	 System.out.println();
-	 
- }
+	int h=1;
+for(int i=1;i<=10;i+=2)
+{
+	for(int k=h;k<5;k++) {
+		System.out.print(" ");
 	}
+	
+	for(int j=0;j<i;j++)
+		System.out.print("*");
+	
+	System.out.println();
+	h++;
+}
+ }
+	
 }
