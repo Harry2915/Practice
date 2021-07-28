@@ -8,18 +8,15 @@ import java.util.Scanner;
 public class Practice {
 
 public static void main(String[] args) {
-	Scanner sc = new Scanner(System.in);
-	int h = sc.nextInt();
-	int a=0,b=1,c=a+b,i=1;
-	System.out.print("0 ");
-	while(i!=h) {
-		System.out.print(c+" ");
-		b=a;
-		a=c;
-		
-		c=a+b;
-		i++;
-	}
+  for(int i=0;i<=4;i++) {
+	  for(int k=0;k<=3-i;k++)
+		  System.out.print(" ");
+	  for(int j=0;j<=i;j++)
+		  System.out.print(" * ");
+	  
+	  
+	  System.out.println();
+  }
 }
 }
 
