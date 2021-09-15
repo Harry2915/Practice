@@ -9,6 +9,6 @@ public class MathPrac {
 			sum+=i;
 			
 		}
-		return sum;
+		return sum+1;
 	}
 }
